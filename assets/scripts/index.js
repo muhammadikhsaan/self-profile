@@ -1,8 +1,8 @@
 const goPage = (path = '', target="_parent") => {
 
-    path && window.open('/#/'+path, target); 
+    path && window.open('/self-profile/#/'+path, target); 
 
-    var page    = window.location.hash.replace('#/', '') || 'page-home',
+    var page    = window.location.hash.replace('self-profile/#/', '') || 'page-home',
         classes = '.'+page,
         now = $('#page-wrap')[0].offsetLeft,
         scroll = $(classes)[0].offsetLeft,
